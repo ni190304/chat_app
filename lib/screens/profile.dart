@@ -32,7 +32,10 @@ class _Profile_ScreenState extends State<Profile_Screen> {
           child: FloatingActionButton.extended(
             backgroundColor: Colors.red,
             onPressed: () async {
-              Dialogs.showProgressbar(context);
+              Dialogs.showProgressbar(context); 
+
+
+              
 
               await Reference.auth.signOut().then((value) async {
                 await GoogleSignIn().signOut().then((value) {

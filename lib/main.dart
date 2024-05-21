@@ -1,5 +1,5 @@
 import 'package:chat_app/firebase_options.dart';
-import 'package:chat_app/screens/auth/login_screen.dart';
+import 'package:chat_app/screens/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
 // import 'package:chat_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const Login_Screen());
+        home: const SplashScreen());
   }
 }
 
